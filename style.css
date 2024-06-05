@@ -1,0 +1,116 @@
+:root{
+    --primary-color: hsl(14, 45%, 36%);;
+    --neutral-color:;
+    --secondary-color:;
+    --background-color:hsl(30, 54%, 90%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+    padding: 8rem 0;
+    background-color: var(--background-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+img{
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+
+h1{
+    margin-top: 1rem;
+}
+
+li{
+    color: Grey: hsl(30, 18%, 87%);
+}
+ul,ol{
+    list-style-position: inside;
+}
+
+.recipe{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.preparation{
+    margin: 2rem 0;
+    padding: 1rem;
+    line-height: 2rem;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.ingredient{
+    line-height: 2rem;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+
+.instruction{
+    line-height: 2rem;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+.text__bold{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.prep__time{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+li::marker{
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.nutmeg{
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+table{
+    width: 100%;
+}
+
+table tr td{
+    padding: 1rem 0;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+
+@media (max-width: 500px){
+    body{
+        padding: 0;
+    }
+    main{
+        max-width: 100vw;
+        border-radius: 0rem;
+    }
+    
+}
